@@ -1,0 +1,58 @@
+git init
+git add . 
+git commit -m 'message here'
+git push
+
+//Branches
+git branch (all branches)
+git branch branchName (making new branch)
+git checkout branchName (changing to another branch)
+
+//new branchName and switching to newBranch 
+git checkout -b branchName
+
+//merge push and pull into another branch
+git pull
+
+
+// 1. STARTING GITHUB 
+START FOLDER AND FILES/REPOSITORY ON GITHUB/AND PUSH FILES FROM VSCODE
+In VSCODE OR OTHER TERMINAL => cd to folder/open it from terminal in VSCODE with command => code . or just open folder. 
+1. Make & Open folder.
+2. git init (starts empty GIT REPOSITORY IN FOLDER)
+3. git add . (To track and watch the files You want) (for singles files put file names after git add like index.html styles.css or if want many folders just use period . adds all files)
+4. git commit -m ‘message here: initial or description of what code is for‘ 
+(Git commit saves snapshot of all files like CHECKPOINT: put message in ‘ ‘ AFTER -m )
+5. MAKE NEW REPOSITORY ON GITHUB WEBSITE WHERE FILES WILL BE ADDED
+6. git branch -M main (makes Branch main on Github)
+7. git remote add origin https://....
+   Add the link from GitHub repository here. 
+8. git push -u origin main (when files added/committed/and is first time sending to GitHub USE -u origin main after that just use git push)
+
+AFTER FOLDER AND FILES ARE MADE AND GITHUB HAS NEW REPOSITORY WITH FILES*
+
+WHEN CHANGING OR ADDING THINGS IN THE FILES FROM VSCODE LIKE ADDING SOMETHING NEW TO WEBPAGE LIKE TITLE/NAVBAR/COMPONENT and want to save the changes to have a new snapshot/instance of it do git add . again and git commit -m ‘message here ’
+1. git add . 
+2. git commit -m ‘add navbar and h1’ 
+3. git push (adds changes to GitHub don’t need to put -u origin main again)
+
+
+2. BRANCHES 
+1. git branch (shows the branches that are already made)
+2. git branch footer (putting git branch and giving it any name like: footer makes new branch with that name on GITHUB can be used to push/add any file to this new branch if needed)
+3. git checkout footer (git checkout is for changing branches: here switches to footer) 
+4. git checkout -b footer (short way to make new branch and switch to branch)***
+5. git add . , git commit -m ‘add footer’ , instead of git push next have to put: 
+   git push - - set - upstream origin footer (git push —set-upstream origin footer for new branches made is like git push -u origin main when adding for the first time to GitHub after that can be ok to use only git push)
+
+NOW THERE WILL BE A MAIN BRANCH AND FOOTER BRANCH ON GITHUB AND ALSO ON VSCODE.
+NEXT => HOW TO MERGE FOOTER OR NEW BRANCH WITH MAIN. 
+
+3. MERGE BRANCHES commands
+1. On VSCODE switch to Main Branch (icon) on bottom left of VSCODE window.
+2. git merge footer (adds footer to main branch now)
+3. git pull (to see files in GitHub => also terminal will provide information like: 'Already up to date' or if Github still needs to pull somethings)
+4. gut push (adds the merge on Github website)
+
+
+
