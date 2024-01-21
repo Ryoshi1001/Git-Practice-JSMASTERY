@@ -52,7 +52,7 @@ NEXT => HOW TO MERGE FOOTER OR NEW BRANCH WITH MAIN.
 1. On VSCODE switch to Main Branch (icon) on bottom left of VSCODE window.
 2. git merge footer (adds footer to main branch now)
 3. git pull (to see files in GitHub => also terminal will provide information like: 'Already up to date' or if Github still needs to pull somethings)
-4. gut push (adds the merge on Github website)
+4. git push (adds the merge on Github website)
 
 
 
